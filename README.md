@@ -1,8 +1,9 @@
 # Polyglot Conway
 
 ### About this repo ℹ️
+
 After being delighted by the genious and simplicity of Conway's Game of Life, I decided to try to implement it myself. But why stop there? Implementing it is a great way to get used to a programming language's syntax and peculiarities.
-So I created this repo to implement Conway's Game of Life as a way to learn, improve my skills, or try new *trendy* programming languages. Some considerations:
+So I created this repo to implement Conway's Game of Life as a way to learn, improve my skills, or try new _trendy_ programming languages. Some considerations:
 
 - I want to do the simplest implementation as I can, only with 1, 2 or 3 files, displayin . That's why I'm doing a **monolith repo** for all the programming languages, as multiple repos with 2 files is a little overkill.
 - I languages where OOP is optional I might not use it, it depends on the reason I'm learning it.
@@ -22,8 +23,7 @@ So I created this repo to implement Conway's Game of Life as a way to learn, imp
 
 ### Implementation Status 🚦
 
-| Language | Status |
-|----------|--------|
-| <img src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white&style=for-the-badge" alt="TypeScript">     | ⚪️ Future plan     |
-| <img src="https://img.shields.io/badge/PHP-777BB4.svg?logo=php&logoColor=white&style=for-the-badge" alt="PHP">    | ⚪️ Future plan      |
-
+| Language                                                                                                                            | Status          |
+| ----------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| <img src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white&style=for-the-badge" alt="TypeScript"> | ⚪️ Future plan |
+| <img src="https://img.shields.io/badge/PHP-777BB4.svg?logo=php&logoColor=white&style=for-the-badge" alt="PHP">                      | 🟡 Basic Done   |
