@@ -1,5 +1,7 @@
 # Polyglot Conway
 
+![ezgif com-optimize](https://github.com/pedrogardim/polyglot-conway/assets/81443264/eda7ec6f-d4c6-4734-b280-a70c26877d23)
+
 ### About this repo ℹ️
 
 After being delighted by the genious and simplicity of Conway's Game of Life, I decided to try to implement it myself. But why stop there? Implementing it is a great way to get used to a programming language's syntax and peculiarities.
