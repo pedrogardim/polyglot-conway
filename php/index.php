@@ -1,16 +1,25 @@
 <?php
-class SimpleClass
+class GameOfLife
 {
-    // property declaration
-    public $var = 'a default value';
+    public $game_board = [];
 
-    // method declaration
-    public function displayVar() {
-        echo $this->var;
+    public function __construct()
+    {
+        $this->init_game();
+    }
+
+    public function init_game()
+    {
+        $width = intval(exec('tput cols'));
+        $height = intval(exec('tput lines'));
+        $this->game_board = array_fill(0, $width, array_fill(0, $height, 0));
+        foreach ($this->game_board as $row => $_) {
+            foreach ($this->game_board as $col => $_) {
+                $this->game_board[$row][$col] = rand(0, 1);
+            }
+        }
+        print_r($this->game_board);
     }
 }
 
-$hey = new SimpleClass();
-echo $hey->var;
-
-?>
+$gameOfLife = new GameOfLife();
