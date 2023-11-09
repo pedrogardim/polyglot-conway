@@ -29,13 +29,15 @@ class GameOfLife
     public function draw()
     {
         //clear screen
-        echo chr(27) . chr(91) . 'H' . chr(27) . chr(91) . 'J';
+        system("clear");
+        $frame = "";
         foreach ($this->game_board as $row => $_) {
             foreach ($this->game_board[$row] as $col => $_) {
-                echo $this->game_board[$row][$col] ? ' X' : ' ';
+                $frame .= $this->game_board[$row][$col] ? json_decode('"\u2588"') : ' ';
             }
-            echo PHP_EOL;
+            $frame .= PHP_EOL;
         }
+        echo $frame;
     }
 }
 
