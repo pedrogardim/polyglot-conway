@@ -20,9 +20,21 @@ class GameOfLife
     public function randomize()
     {
         foreach ($this->game_board as $row => $_) {
-            foreach ($this->game_board as $col => $_) {
+            foreach ($this->game_board[$row] as $col => $_) {
                 $this->game_board[$row][$col] = rand(0, 1);
             }
+        }
+    }
+
+    public function draw()
+    {
+        //clear screen
+        echo chr(27) . chr(91) . 'H' . chr(27) . chr(91) . 'J';
+        foreach ($this->game_board as $row => $_) {
+            foreach ($this->game_board[$row] as $col => $_) {
+                echo $this->game_board[$row][$col] ? ' X' : ' ';
+            }
+            echo PHP_EOL;
         }
     }
 }
